@@ -59,3 +59,4 @@
                                 "--completion-style=detailed"
                                 "--header-insertion=never"))
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
+(set-face-attribute 'default nil :height 120)
