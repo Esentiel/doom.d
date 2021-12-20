@@ -60,3 +60,16 @@
                                 "--header-insertion=never"))
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 (set-face-attribute 'default nil :height 120)
+
+;; Map cpp/h switch
+(map! :leader
+      (:prefix-map ("c" . "code")
+        :desc "Switch cpp-h"        "u" #'ff-find-other-file))
+
+
+;; Map debug project
+(map! :leader
+      (:prefix-map ("p" . "project")
+        :desc "Debug project"       "G"     #'projectile-run-gdb))
+
+(setq doom-font (font-spec :family "DejaVuSansMono Nerd Font" :size 15))
