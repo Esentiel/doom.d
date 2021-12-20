@@ -72,4 +72,4 @@
       (:prefix-map ("p" . "project")
         :desc "Debug project"       "G"     #'projectile-run-gdb))
 
-(setq doom-font (font-spec :family "DejaVuSansMono Nerd Font" :size 15))
+;; (setq doom-font (font-spec :family "DejaVuSansMono Nerd Font" :size 15))
